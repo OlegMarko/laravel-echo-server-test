@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('test-broadcast', function () {
     event(new \App\Events\ExampleEvent);
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
