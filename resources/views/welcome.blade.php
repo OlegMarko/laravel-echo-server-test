@@ -65,6 +65,12 @@
                 margin-bottom: 30px;
             }
         </style>
+
+        <script>
+            window.Laravel = {!! json_encode([
+                'user' => auth()->check() ? auth()->user()->id : null,
+            ]) !!};
+        </script>
     </head>
     <body>
         <div class="flex-center position-ref full-height">

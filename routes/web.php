@@ -16,8 +16,18 @@ Route::get('/', function () {
 });
 
 Route::get('test-broadcast', function () {
+
+    echo 'Test Broadcast';
+
     event(new \App\Events\ExampleEvent);
 });
+
+Route::get('test-private-broadcast', function () {
+
+    echo 'Test Private Broadcast';
+
+    event(new \App\Events\PrivateEvent(auth()->user()));
+})->middleware('auth');
 
 Auth::routes();
 
