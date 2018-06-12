@@ -17,6 +17,10 @@
  
  run command `npm i`
  
+ make `.env` file like to `.env.example`
+
+ run command `php artisan key:generate`
+ 
  `set to .env file BROADCAST_DRIVER=redis and QUEUE_DRIVER=redis`
  
  run command `laravel-echo-server start`
