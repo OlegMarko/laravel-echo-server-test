@@ -7,8 +7,10 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## UP Project
-
+## Install Project
+ 
+ clone the project from github or download .zip `https://github.com/OlegMarko/laravel-echo-server-test.git`
+ 
  run command `composer install`
  
  we have to install the laravel-echo-server package globally `npm install -g laravel-echo-server`
