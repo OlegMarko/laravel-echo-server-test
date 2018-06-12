@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('test-broadcast', function () {
+    event(new \App\Events\ExampleEvent);
+});
