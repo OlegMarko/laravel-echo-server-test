@@ -22,4 +22,15 @@
  run command `php artisan serve`
  
  run command `php artisan queue:listen --tries=1`
+ 
+ [test-broadcast](http://127.0.0.1:8000/test-broadcast)
+ 
+ [test-private-broadcast](http://127.0.0.1:8000/test-private-broadcast)
+
+## Requirements
+- laravel 5.6
+- npm
+- composer
+- redis
+- sqlite
 
